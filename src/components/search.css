@@ -1,0 +1,279 @@
+.search__menu {
+    height: 3.0rem;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search__bar {
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 0 10px;
+    height: 2.3rem;
+    
+    box-shadow: 0 0 8px dimgray;
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.search__input {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    font-size: 1.3rem;
+    margin-left: 8px ;
+    width: 100%;
+}
+
+.search__input:focus {
+    outline: none;
+    
+}
+
+.search__button {
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 2.3rem;
+    margin-left: 3px;
+    box-shadow: 0 0 8px dimgray;
+    padding: 3px 8px;
+    background-color: transparent;
+    font-size: large;
+    border: 2px solid rgb(85, 85, 85);
+    font-weight: lighter;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.search__button:hover {
+    opacity: 1;
+}
+
+.search__lupa {
+    background-color: white;
+    
+}
+
+.userList {
+    padding-inline-start: 0px;
+    list-style-type: none;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.userList__card-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 1px solid #494949;
+    background-color: #eaeaea;
+}
+.userList__card-avatar:hover {
+    box-shadow: 0 0 5px dimgray;
+}
+.userList__card-avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115px; 
+}
+
+.userList__card {
+    margin-right: 5px;
+    margin-left: 5px ;
+    background-color: #C4EBFF;
+    box-shadow: 0 0 8px dimgray;
+    position: relative;
+    width: 300px;
+    padding: 15px ;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.userList__card-name {
+    font-weight: 600;
+    text-align: left;
+    font-size: medium;
+    text-transform: uppercase;
+    
+}
+
+.userList__card-info {
+    overflow: hidden;
+    margin-left: 8px;
+    
+}
+
+.userList_card-info-2 {
+    
+    height: 70px;
+    font-size: 14px;
+    display: flex;
+    padding-top: 8px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.userList_card-info-2  {
+    opacity: 0.9;
+}
+.Userlink:link {
+    text-decoration: none;
+    color: black;
+}
+
+.Userlink:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.Userlink:hover {
+    text-decoration: underline;
+    
+}
+.Userlink:active {
+    text-decoration: underline;
+}
+
+
+
+.userList__button {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.userList__button::before, .userList__button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 2px;
+    background-color: black;
+    transform: translate(-50%, -50%);
+}
+  
+.userList__button::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+  
+.userList__button::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.userPage-container {
+    padding: 20px;
+    width: 100%;
+    line-height: 1.3;
+    max-width: 600px;
+    margin: 200px auto;
+    border: 2px solid #494949;
+    border-radius: 20px;
+    background-color: #C4EBFF;
+    box-shadow: 0 0 20px #A1C1D1;
+}
+
+.userPage {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.userPage-avatar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 165px; 
+}
+
+.userPage-avatar{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #eaeaea;
+    box-shadow: 0 0 8px dimgray;
+    border: 1px solid #494949;
+}
+
+.userPage-avatar-info {
+    margin-top: 15px;
+    font-size: 15px;
+}
+.userPage-avatar-info i {
+    font-size: 14px;
+}
+.userPage-colum_1 {
+    width: 30%;
+    display: block;
+}
+
+.userPage-colum_2 {
+    display: block;
+    margin-left: 20px;
+}
+
+.userPage-login a {
+    text-decoration-line: none;
+    font-weight: lighter;
+
+}
+
+.userPage-info {
+    margin-top: 5px;
+    width: 325px;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.userPage-bio {
+    background-color: #d2edfa;
+    overflow: hidden;
+    width: 325px;
+    height: 125px;
+    padding: 8px;
+    border: 1px solid #494949;
+    border-radius: 10px;
+}
+
+.userPage-bio-block  {
+    margin-top:8px ;
+}
+
+.userPage-aboutMe {
+    padding-left: 8px;
+    font-weight: 600;
+}
+
+.userList__page {
+    display: block;
+}
+
+.notification {
+    font-size: 14px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
