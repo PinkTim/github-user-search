@@ -11,7 +11,7 @@
 .search__bar {
     background-color: white;
     border-radius: 5px;
-    margin: 10px;
+    margin: 10px 10px 10px 0px;
     padding: 0 10px;
     height: 2.3rem;
     
@@ -202,7 +202,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 165px; 
+    
 }
 
 .userPage-avatar{
@@ -250,7 +250,7 @@
     background-color: #d2edfa;
     overflow: hidden;
     width: 325px;
-    height: 125px;
+    min-height: 125px;
     padding: 8px;
     border: 1px solid #494949;
     border-radius: 10px;
@@ -271,4 +271,87 @@
 
 .notification {
     font-size: 14px;
+}
+
+@media  (max-width:670px) {
+    .userPage-container {
+        width: 500px;
+    }
+    .userPage-avatar {
+        width: 150px;
+        height: 150px;
+    }
+    .userPage-bio {
+        width: 270px;
+        font-size: 14px;
+    }
+    .userPage-info {
+        flex-wrap: wrap;
+        font-size: 16px;
+        justify-content: flex-start;
+    }
+
+    .userPage-followers {
+        padding-right: 10px;
+    }
+}
+
+@media  (max-width:600px) {
+    .notification {
+        font-size: 14px;
+    }
+    .userList {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+    .userList__card {
+        margin-bottom: 10px;
+    }
+    
+    
+}
+
+@media  (max-width:450px) {
+    .search__input {
+        font-size: 18px;
+    }
+    .notification {
+        font-size: 14px;
+    }
+    .userList {
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+    .userList__card {
+        margin-bottom: 10px;
+    }
+    .userPage-container {
+        width: 350px;
+    }
+    .userPage-avatar {
+        width: 120px;
+        height: 120px;
+    }
+    .userPage-info {
+        flex-wrap: wrap;
+        width: auto;
+        font-size: 14px;
+        justify-content: flex-start;
+    }
+    .userPage-followers {
+        padding-right: 10px;
+    }
+    .userPage-bio {
+        width: 190px;
+        font-size: 12px;
+    }
+    .userPage-colum_1 {
+        width: 33%;
+    }
+    .userPage-name {
+        font-size: 20px;
+    }
+    .userPage-login {
+        font-size: 14px;
+    }
 }
